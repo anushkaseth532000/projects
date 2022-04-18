@@ -1,0 +1,229 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Urban Suburban</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #055685;
+  color: white;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.dropbtn {
+  background-color: #28075c;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.xnamefname {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://www.urbansuburban.in/image/catalog/logo_shiolute.png?v2">
+  <p>We are a brand owned by Women for WOMEN</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="login.html">LOG IN</a>
+  <a href="category.html">CATEGORIES</a>
+  <a href="cart.html" class="right">CART </a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <center>
+      <h2>Urban Suburban</h2>
+    <h5>Choose your favorite</h5>
+    </center>
+    
+    <div class="container">
+      <pre> 
+        <img class="img-responsive" src="https://images.unsplash.com/photo-1525935926142-56f7db1e9559?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTN8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Dresses" width="220" height="300"> 
+      
+      
+        
+        
+        <img src="https://images.unsplash.com/flagged/photo-1554172421-30e7475e3cc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHF1ZWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"alt="Dresses" width="220" height="300">
+      </pre>
+      </div>
+   
+    <hr/><center>
+    <div class="dropdown">
+      <a href="aboutus.html"><button class="dropbtn"><h3><u>About Us</u></h3></button></a>
+      <div class="dropdown-content">
+        <a href="anushka.html">Anushka Seth</a>
+        <a href="mrinal.html">Mrinal Kumari</a>
+        <a href="sahana.html">Sahana M</a>
+        <a href="anju.html">Anju M</a>
+      </div>
+    </div>
+  </div></center>
+  <div class="main">
+    <h2>Trends from around the world</h2>
+    <h5>We choose what is best for you.</h5>   
+   
+    <div>
+        <table>
+            <tr>
+                <td> <img src="https://images.unsplash.com/photo-1597557314810-9963a48c188d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" height="200">  </td>
+                <td> <img src="https://images.unsplash.com/photo-1593592023995-a857ecf39076?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" height="200" ></td>
+                <td> <img src="https://images.unsplash.com/photo-1596637510298-637b184503e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZSUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" height="200"></td>
+                <td> <img src="https://images.unsplash.com/photo-1602424158419-868ea180a67f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Ymx1ZSUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" height="200"></td>
+                <td> <img src="https://images.unsplash.com/photo-1602582332477-2e82e54d6596?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJsdWUlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" height="200"> </td>
+                <td><img src="https://images.unsplash.com/photo-1495385794356-15371f348c31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJsdWUlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" height="200"></td>              
+              </tr>
+        </table>
+    </div>
+    <p><b>Why will you choose Urban Suburban ?</b></p>
+    <p>We are here to provide you the safe space to browse your favorities and order then anywhere, anytime without any delivery charges. You will be provided with a wide variety of clothings and accessories from the brands all around the world.</p>
+    <br>
+    <h1 style="color: rgb(30, 8, 73);"><u>Wear Confidence</u></h1>
+    <div>
+      <table>
+        <tr>
+            <td> <img src="https://i.pinimg.com/originals/3b/27/b0/3b27b015efec303b68ee268c1fbde0fe.gif" height="250" width="150">  </td>
+            <td> <img src="https://media.glamour.com/photos/5695d2c016d0dc3747ee2e7d/master/w_1600%2Cc_limit/fashion-2013-03-0304-fashion-week-jason-wu.gif" height="250" width="450" ></td>
+            <td> <img src="https://i.gifer.com/5GEw.gif" height="250" width="200"> </td>
+            </tr>
+    </table>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+ <a href="contactus.html"> <h2><u>Contact Us</u></h2></a>
+  <br/>
+  <center>
+    <table>
+    <tr>
+      <td><a href="https://www.instagram.com/in.urbansuburban/?hl=en"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLFB9U9FiNo7_2z9nJMQN551kO1u_jHrQ7A&usqp=CAU"height="40"width="40"></a>
+      <td><a href="https://www.pinterest.com/urbansuburbanin/_created/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAMAAAALZFNgAAAAkFBMVEXl0sEAAADm0r8AAAPl0sPp1cPs2MbczL7r1sLt28vr283i1svfz8G+sqjm1MDz387Tx7wYGBgwLy5HREJWU1DFuq8nJiXbz8WDfXjNv7JAPz57dXAiIiHw4tXXxrqdlY6wp59va2dfWlfJv7k7NzSmnJOWjYRpY10TEhCKgnmOiYRPTEpaWltlZmMpKy1PSELJRLZcAAAFzUlEQVR4nO1aa3uiOhDGNAkmQMALipcquFZr7dn9///uBEQyIbhtNch+4P3g0wdo5mVmMrfgOD169OjRo0ePHj169OjRJZBE9xQwdoSQPx2C0PD1lbvuZrOZeyykhDxXvsjfnjIvCrar82w9umA8TdLIZ1SI5ykHDYc8TqbrgYFJFnh0+Cx/ISxOChIvJhN5cRXz4RNYIIrTcyMDRWUX8La9BQ3DYPpXFhdkc9YuDxZNb9pEx5Y5rbmKcPj2vW6Gm5yOrvSUVrggwrNvWKXCcj4UrfBg0dgQNppm2SpJVtlu30AloPY1ghH9VeMxmhzijYMpk6COH6VZnegooNatI3mMdCGHmDMY0xENvfRYoxIRx26cRXQxgwL2b1IJ8F3l3zgPddEfjch6bjW2YYS8PdyzK5/d0DjB2wHc3jts1zR8BzbqWpr+ZtpHLNZ0cggt0kBsCyLGUgYIdNP0WNSsuCD2dEIi4KgTl37xOA0gkeMtK96B16my+v5r9ysUqBBYS4AkVe73HilN39yY6HUJiOysqYRP1KpvKqvKcpXg5ihOoHFGsSWVsBTsWxW0kQwaQRq4YZMYtgNMVnZKAsRVAbJ2lQJ4PF1Lg62PUQMTAsgP3j0rREiswtMHRaVj4DC5XpwtTCbIr+oF+d+BldqEJU2v5mXqjdem12IB7g9OVohwFZ6Sa5QU7ANu0IOpEgp38PFxFtIyC7Vg6f5YXtQqtSUxdKIFtbGNYgC82hlfXFU44XmgwTVSG4ng/c3jqQ+RFTR1k5RmQXN4P7ZQDODParngupzuITkRQ/XIg/eDx4lgT/mqf927Tr21MYk4tok4vnI5UorD7qhGxDdMU9PI40FeuNVqZ1KKw4sajzE2ifgakcc1Aoh8OqU4LaXlyMztizbtEfnvKk5LJHkI35ql0lDT2uLxUv5rIoMq0AEgkdom4lcpb3cVVzfNzEzzSAvx0pkfJoK839fVJsIpI2vNWTOzUBc0AQ/MfOfhLljgqsR5ca4hPtK3b2BKEQT2fGdhgQhVIf5qaaEHtHHUQMSHTXlmYyoAjH26VsGa3gfHpvbChU8cvmpAvgNQBiy9kojQmrmUmq5I3zTbWamemZpipsNCJEYcliNzZBJh2ljAzkAAlIrVPg1/Kyl/eEPVI2Bjs7TU/i7UHslY7nYCw4x2aCCih7wPGy6SN5CZWvOtWFOrAwNsEgk/IRFbPSesWpf5BUxP6kpDCY+IVp5NPFstJ1YF2eTS8II+btLgAFzb3lY274UIr1wvKxZ1wQAkMRMNmWuRN7I4vaoGm4WPCOgiHyYRtoI8jmbVdDek0UsmUb4mPQA5K8M0teTc0JDeD0HmhVsscR68tFZ/YmgEa5Or3avd8TPi6f7ahPtwsPtSm5EhDmkORk2zgoeIIMLjuIhdJNb6zSPXQjzszgf5lrE/j0fk8u5ES2h50nNwPu3ExbmBPnue4IZEZAsw0l7emudzJCzQkAW1cbxtwwBg9KrXZ7KmnaQuZxRHQa03byrv7QHNBybGuywzTz1XLRyTKNB6M3ETGUN+ezxgETuY3WYh9cFbPv8FlXM6vn3O+MHaOtMr4SrRYzeqzwWqWwGzfGRUB8wkO0LjZRONl5U7RI/3Mn8FLIpO1KHzrJR9UVTxu4uLBNSuizAwmP9FsBAszjT7nJM5f8b3ErAoKuTJeBqlx/1svZ7Nltl24bJ2TVICB8pXp5e4KfMhZcx3XR/nH7M86ZsNDIoie8XoHYBFkb2jqZ8DcRAquvy+CY7GpjYPUn8K2OXLXrNDIiDj2Tqquwu+ynh7t8OP8USkip/jsyJGE2DGs3R2eR9kj1cF1lOn4eyoiJRzrG4QgtTrdkdDElHT03WX4QwSSbp0ESdUjVyXGU8SqeLZvlMeIMK32kx+jWp+umyxhfsWkU1ZJwfdKqSyTdLp3nXymYSTb2BLM+2HQNztKW5hHPVDFMPNp3UMPXr06NGjR48ePXr0+JfxP4+WR9pTrrPlAAAAAElFTkSuQmCC"height="40"width="40"></a></td>
+      <td><a href="https://www.facebook.com/in.urbansuburban/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC" height="40"width="40"></td></a>   
+     </tr>
+  </table>
+</center>
+<p><a href="ourservices.html"><u>Our Services</u></a></p>
+</div>
+
+</body>
+</html>

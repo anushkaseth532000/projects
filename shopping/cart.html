@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+
+    <title>Cart</title>
+    <style>
+               * {
+          box-sizing: border-box;
+        }body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    }
+
+
+    .header {
+    padding: 80px;
+    text-align: center;
+    background: #055685;
+    color: white;
+    }
+
+
+    .header h1 {
+    font-size: 40px;
+    }
+
+
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+
+    .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+
+
+    .navbar a.right {
+    float: right;
+    }
+
+
+    .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+
+.cart a{
+    text-decoration: none;
+    list-style: none;
+}
+.cart a:hover{
+    text-decoration: none;
+    list-style: none;
+}
+.bg_cart_1{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.list-group-item{
+    background-color: inherit !important;
+}
+.footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            }
+
+
+            @media screen and (max-width: 700px) {
+            .row {   
+                flex-direction: column;
+            }
+            }
+
+            @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+          }
+    </style>
+  </head>
+  <body id="top">
+    <div class="header">
+      <img src="https://www.urbansuburban.in/image/catalog/logo_shiolute.png?v2">
+      <p style="color: azure;">We are a brand owned by Women for WOMEN</p>
+    </div>
+    
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="login.html">LOG IN</a>
+      <a href="category.html">CATEGORIES</a>
+      <a href="cart.html" class="right">CART </a>
+    </div>
+
+<section class="cart py-5 my-5" id="cart">
+<div class="container ">
+<div class="section_title text-center mb-5">
+<h1 class="text-capitalize"><u>Cart</u></h1>
+</div>
+<div class="row bg_cart_1 rounded">
+<div class="col-md-8 border-right">
+<div class="mb-3">
+<div class="pt-4">
+<h5 class="mb-4">Cart (<span>2</span> items)</h5>
+<div class="row mb-4">
+<div class="col-md-5 col-lg-3 col-xl-3">
+<div class="rounded mb-3 mb-md-0">
+<img class="img-fluid w-100 rounded"
+src="https://media.istockphoto.com/photos/full-length-portrait-beautiful-young-girl-wearing-black-crop-top-and-picture-id1146261996?b=1&k=20&m=1146261996&s=170667a&w=0&h=mf40GJCXuKpLjlXa-aF4SMpXYjr0Ac6CEqrsUtKMFiQ=" class="img img-fluid"
+alt="Sample">
+</div>
+</div>
+<div class="col-md-7 col-lg-9 col-xl-9">
+<div>
+<div class="d-flex justify-content-between">
+<div>
+<h5>Black Flare Pant</h5>
+<p class="mb-3 text-muted text-uppercase small">PANT-BLACK</p>
+<p class="mb-2 text-muted text-uppercase small">Color: Black</p>
+<p class="mb-3 text-muted text-uppercase small">Size:
+L</p>
+</div>
+<div>
+<div class="mb-0 w-100">
+<button
+onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+class="btn btn-sm btn-outline-primary">
+<i class="fas fa-minus"></i>
+</button>
+<input class="quantity text-center" min="0" max="10"
+name="quantity"
+value="1" type="number">
+<button
+onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+class="btn btn-sm btn-outline-primary">
+<i class="fas fa-plus"></i>
+</button>
+</div>
+<small class="form-text text-muted text-center">
+</small>
+</div>
+</div>
+<div class="d-flex justify-content-between align-items-center">
+<div>
+<a href="javascript:;" type="button"
+class="small text-uppercase mr-3"><i
+class="fas fa-trash-alt mr-1"></i> Remove item </a>
+</div>
+<p class="mb-0"><span><strong
+id="summary">₹400.01</strong></span></p
+class="mb-0">
+</div>
+</div>
+</div>
+</div>
+<hr class="mb-4">
+<div class="row mb-4">
+<div class="col-md-5 col-lg-3 col-xl-3">
+<div class="rounded mb-3 mb-md-0">
+<img class="img-fluid w-100 rounded"
+src="https://media.istockphoto.com/photos/throw-your-head-back-laughing-picture-id501651643?b=1&k=20&m=501651643&s=170667a&w=0&h=HqE7CshA1wyWwcWKrU9hK0tiC2fMa9zt9gF7wLJDHN0=" class="img img-fluid"
+alt="Sample">
+</div>
+</div>
+<div class="col-md-7 col-lg-9 col-xl-9">
+<div>
+<div class="d-flex justify-content-between">
+<div>
+<h5>Straight Jeans</h5>
+<p class="mb-3 text-muted text-uppercase small">PANTS-BLUE</p>
+<p class="mb-2 text-muted text-uppercase small">Color:
+Blue</p>
+<p class="mb-3 text-muted text-uppercase small">Size:
+M</p>
+</div>
+<div>
+<div class="mb-0 w-100">
+<button
+onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+class="btn btn-sm btn-outline-primary">
+<i class="fas fa-minus"></i>
+</button>
+<input class="quantity text-center" min="0" max="10"
+name="quantity"
+value="1" type="number">
+<button
+onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+class="btn btn-sm btn-outline-primary">
+<i class="fas fa-plus"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="d-flex justify-content-between align-items-center">
+<div>
+<a href="javascript:;" type="button"
+class="card-link-secondary small text-uppercase mr-3">
+<i class="fas fa-trash-alt mr-1"></i> Remove item
+</a>
+</div>
+<p class="mb-0"><span><strong>₹399.99</strong></span></p
+class="mb-0">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 rounded">
+<div class="mb-3">
+<div class="pt-4">
+<h5 class="mb-3">Order summary</h5>
+<ul class="list-group list-group-flush">
+<li
+class="list-group-item d-flex justify-content-between
+align-items-center border-0 px-0 pb-2">
+<span>Black Flare Pant</span>
+<span>x1</span>
+<span>₹400.01</span>
+</li>
+<li
+class="list-group-item d-flex justify-content-between
+align-items-center border-0 px-0 pb-2">
+<span>Straight Jeans</span>
+<span>x1</span>
+<span>₹399.99</span>
+</li>
+<li
+class="list-group-item d-flex justify-content-between
+align-items-center border-top px-0 mb-3">
+<div>
+<strong>Total amount</strong>
+<strong>
+<p class="mb-0">(including VAT)</p>
+</strong>
+</div>
+<span><strong>₹800</strong></span>
+</li>
+</ul  style="color: blue;"><button>Go to Checkout</button> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="footer">
+  <a href="contactus.html"> <h2><u>Contact Us</u></h2></a>
+   <br/>
+   <center>
+     <table>
+     <tr>
+       <td><a href="https://www.instagram.com/in.urbansuburban/?hl=en"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLFB9U9FiNo7_2z9nJMQN551kO1u_jHrQ7A&usqp=CAU"height="40"width="40"></a>
+       <td><a href="https://www.pinterest.com/urbansuburbanin/_created/"><img src="data:image/png;base64,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"height="40"width="40"></a></td>
+       <td><a href="https://www.facebook.com/in.urbansuburban/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC" height="40"width="40"></td></a>   
+      </tr>
+   </table>
+ </center>
+ <p><a href="ourservices.html"><u>Our Services</u></a></p>
+ </div>
+
+
+        </body>
+  </body>
+</html>
